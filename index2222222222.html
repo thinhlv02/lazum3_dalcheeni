@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+</head>
+<body>
+<section class="top-link clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="nav navbar-nav topmenu-contact">
+					<li><i class="fa fa-phone"></i> Hotline: 0908 77 00 95</li>
+				</ul>
+					<ul class="nav navbar-nav navbar-right topmenu  hidden-xs hidden-sm">
+						<li class="order-check"><a href="/kiem-tra-don-hang.html"><i class="fa fa-pencil-square-o"></i> Kiểm tra đơn hàng </a></li>
+						<li class="order-cart"><a href="/gio-hang.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+						<li class="account-login"><a href="/dang-nhap.html"><i class="fa fa-sign-in"></i> Đăng nhập</a></li>
+						<li class="account-register"><a href="/dang-ky.html"><i class="fa fa-key"></i> Đăng ký</a></li>
+					</ul>
+				<div class="show-mobile hidden-lg hidden-md">
+					<div class="quick-user">
+						<div class="quickaccess-toggle">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="inner-toggle">
+							<ul class="login links">
+								<li>
+									<a href="/dang-ky.html"><i class="fa fa-sign-in"></i> Đăng ký</a>
+								</li>
+								<li>
+									<a href="/dang-nhap.html"><i class="fa fa-key"></i> Đăng nhập</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="quick-access">
+						<div class="quickaccess-toggle">
+							<i class="fa fa-list"></i>
+						</div>
+						<div class="inner-toggle">
+							<ul class="links">
+								<li><a id="mobile-wishlist-total" href="/kiem-tra-don-hang.html" class="wishlist"><i class="fa fa-pencil-square-o"></i> Kiểm tra đơn hàng</a></li>
+								<li><a href="/gio-hang.html" class="shoppingcart"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<!--end section head -->
+
+<section class="header-content clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-xs-12 col-sm-12 header-left text-center">
+				<div class="logo">
+					<a href="/" title="">
+						<img alt="C&#212;NG TY TNHH PH&#193;T TRIỂN C&#212;NG NGHỆ RUNTIME" src="images/banner.png" class="img-responsive" />
+					</a>
+				</div>
+			</div>
+			<div class="col-md-9 col-xs-12 col-sm-12 header-right">
+				<div class="sale-policy clearfix hidden-sm hidden-xs">
+					<ul class="clearfix">
+						<li class="shipping">
+							<i class="fa fa-truck"></i><span>
+								Giao hàng miễn phí
+							</span>
+						</li>
+						<li class="payment">
+							<i class="fa fa-money"></i><span>
+								Thanh toán linh hoạt
+							</span>
+						</li>
+						<li class="return">
+							<i class="fa fa-refresh"></i><span>
+								Trả hàng trong 30 ngày
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="cart">
+					<div class="heading">
+						<a href="/gio-hang.html">
+							<span class="icon">icon</span><span id="cart-total">
+								0
+								sp - 0đ
+							</span><i class="fa fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+				<div class="search hidden-sm hidden-xs">
+					<div class="input-cat form-search clearfix">
+						<div class="form-search-controls">
+							<input type="text" name="search" id="txtsearch" onblur="if(this.value=='')this.value='Tìm kiếm...'"
+								   onfocus="if(this.value=='Tìm kiếm...')this.value=''" value="T&#236;m kiếm..." />
+							<div class="select-categories">
+								<select name="lbgroup" id="lbgroup">
+											<option value="0" selected="selected">Tất cả</option>
+											<option class="option-1" value="1130">M&#225;y ảnh &amp; M&#225;y quay phim</option>
+											<option class="option-1" value="1131">M&#225;y để b&#224;n &amp; Laptop</option>
+											<option class="option-1" value="1132">Điện thoại</option>
+											<option class="option-1" value="1133">M&#225;y t&#237;nh bảng</option>
+											<option class="option-1" value="1134">Thời trang</option>
+											<option class="option-1" value="1135">H&#224;ng gia dụng</option>
+								</select>
+							</div>
+						</div>
+						<button class="btn btn-search" title="Search" type="button" id="btnsearch" value="Search">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<div class="social-group">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="navigation-menu clearfix">
+        <div class="container">
+            <div class="menu-top">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="menu-cate menu-quick-select">
+                            <div class="menu-cate-title">
+                                <span><i class="fa fa-th-list"></i><a href="/san-pham.html">Danh mục sản phẩm</a></span>
+                                <i class="fa fa-chevron-circle-down"></i>
+                            </div>
+                            <ul class="menu-cate-content">
+                                    <li>
+                                        <a href="/san-pham/may-anh-may-quay-phim-1130"><i class="fa /Uploads/shop90/images/icon/i_catelogy_7-20x20_png_pagespeed_ce_kzOx8kw31-.png"></i>M&#225;y ảnh &amp; M&#225;y quay phim<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                                    <div class="sub-menu hidden-xs">
+                                        <ul class="colum0">
+                                                <li>
+                                                    <a href="/san-pham/may-quay-phim">M&#225;y quay phim</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/may-quy-phim-sony">M&#225;y quy phim Sony</a></li>
+                                                                <li><a href="/san-pham/may-quay-phim-panasonic">M&#225;y quay phim Panasonic</a></li>
+                                                                <li><a href="/san-pham/may-quay-phim-canon">M&#225;y quay phim Canon</a></li>
+                                                                <li><a href="/san-pham/may-quay-phim-jvc">M&#225;y quay phim JVC</a></li>
+                                                        </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="/san-pham/may-anh-so-1140">M&#225;y ảnh số</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/may-anh-canon">M&#225;y ảnh Canon</a></li>
+                                                                <li><a href="/san-pham/may-anh-panasonic">M&#225;y ảnh Panasonic</a></li>
+                                                                <li><a href="/san-pham/may-anh-samsung">M&#225;y ảnh Samsung</a></li>
+                                                                <li><a href="/san-pham/may-anh-sony">M&#225;y ảnh Sony</a></li>
+                                                                <li><a href="/san-pham/may-anh-nikon">M&#225;y ảnh Nikon</a></li>
+                                                                <li><a href="/san-pham/may-anh-casio-1411">M&#225;y ảnh Casio</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                        <ul class="colum1">
+                                                <li>
+                                                    <a href="/san-pham/bo-do-the-thao-nam-1139">Bộ Đồ Thể Thao Nam</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/san-pham/phu-kien">Phụ kiện</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/chan-may">Ch&#226;n m&#225;y</a></li>
+                                                                <li><a href="/san-pham/pin--sac">Pin, Sạc</a></li>
+                                                                <li><a href="/san-pham/the-nho">Thẻ nhớ</a></li>
+                                                                <li><a href="/san-pham/lens-hood">Lens hood</a></li>
+                                                                <li><a href="/san-pham/bo-ve-sinh">Bộ vệ sinh</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/may-de-ban---laptop"><i class="fa /Uploads/shop90/images/icon/i_catelogy_5-20x20_png_pagespeed_ce_ou8xCNG4YJ.png"></i>M&#225;y để b&#224;n &amp; Laptop<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                                    <div class="sub-menu hidden-xs">
+                                        <ul class="colum0">
+                                                <li>
+                                                    <a href="/san-pham/may-de-ban">M&#225;y để b&#224;n</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/may-tinh-hp">M&#225;y t&#237;nh HP</a></li>
+                                                                <li><a href="/san-pham/may-tinh-dell">M&#225;y tinh Dell</a></li>
+                                                                <li><a href="/san-pham/may-tinh-lenovo">M&#225;y tinh Lenovo</a></li>
+                                                                <li><a href="/san-pham/may-tinh-acer">M&#225;y tinh Acer</a></li>
+                                                                <li><a href="/san-pham/may-tinh-asus">M&#225;y tinh Asus</a></li>
+                                                        </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="/san-pham/phu-kien-may-tinh">Phụ kiện m&#225;y t&#237;nh</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/tui-xach">T&#250;i x&#225;ch</a></li>
+                                                                <li><a href="/san-pham/ram">Ram</a></li>
+                                                                <li><a href="/san-pham/pin---sac">Pin &amp; Sạc</a></li>
+                                                                <li><a href="/san-pham/ban-phim---chuot">B&#224;n ph&#237;m &amp; chuột</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                        <ul class="colum1">
+                                                <li>
+                                                    <a href="/san-pham/laptop">Laptop</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/laptop-dell">Laptop Dell</a></li>
+                                                                <li><a href="/san-pham/laptop-asus">Laptop Asus</a></li>
+                                                                <li><a href="/san-pham/laptop-acer">Laptop Acer</a></li>
+                                                                <li><a href="/san-pham/laptop-hp">Laptop Hp</a></li>
+                                                                <li><a href="/san-pham/laptop-sony">Laptop Sony</a></li>
+                                                                <li><a href="/san-pham/laptop-lenovo">Laptop Lenovo</a></li>
+                                                                <li><a href="/san-pham/laptop-toshiba">Laptop Toshiba</a></li>
+                                                                <li><a href="/san-pham/laptop-samsung">Laptop Samsung</a></li>
+                                                                <li><a href="/san-pham/laptop-apple">Laptop Apple</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/dien-thoai-1132"><i class="fa "></i>Điện thoại<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                                    <div class="sub-menu hidden-xs">
+                                        <ul class="colum0">
+                                                <li>
+                                                    <a href="/san-pham/dien-thoai-di-dong">Điện thoại di động</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/dien-thoai-samsung">Điện thoại Samsung</a></li>
+                                                                <li><a href="/san-pham/dien-thoai-sony">Điện thoại Sony</a></li>
+                                                                <li><a href="/san-pham/dien-thoai-iphone">Điện thoại IPhone</a></li>
+                                                                <li><a href="/san-pham/dien-thoai-lg">Điện thoại LG</a></li>
+                                                                <li><a href="/san-pham/dien-thoai-nokia">Điện thoại Nokia</a></li>
+                                                                <li><a href="/san-pham/dien-thoai-asus">Điện thoại Asus</a></li>
+                                                                <li><a href="/san-pham/dien-thoai-htc">Điện thoại HTC</a></li>
+                                                                <li><a href="/san-pham/dien-thoai-lenovo">Điện thoại Lenovo</a></li>
+                                                        </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="/san-pham/phu-kien-dien-thoai">Phụ kiện điện thoại</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/pin-dien-thoai">Pin điện thoại</a></li>
+                                                                <li><a href="/san-pham/sac-dien-thoai">Sạc điện thoại</a></li>
+                                                                <li><a href="/san-pham/bao-da">Bao da</a></li>
+                                                                <li><a href="/san-pham/phu-kien-khac">Phụ kiện kh&#225;c</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                        <ul class="colum1">
+                                                <li>
+                                                    <a href="/san-pham/dien-thoai-co-dinh">Điện thoại cố định</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/dien-thoai-panasonic">Điện thoại Panasonic</a></li>
+                                                                <li><a href="/san-pham/hang-khac">H&#227;ng kh&#225;c</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/may-tinh-bang"><i class="fa /Uploads/shop90/images/icon/i_catelogy_3-20x20_png_pagespeed_ce_j-iqkcibbN.png"></i>M&#225;y t&#237;nh bảng<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                                    <div class="sub-menu hidden-xs">
+                                        <ul class="colum0">
+                                                <li>
+                                                    <a href="/san-pham/theo-hang">Theo h&#227;ng</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/tablet-apple">Tablet Apple</a></li>
+                                                                <li><a href="/san-pham/tablet-samsung">Tablet Samsung</a></li>
+                                                                <li><a href="/san-pham/tablet-acer">Tablet Acer</a></li>
+                                                                <li><a href="/san-pham/tablet-asus">Tablet Asus</a></li>
+                                                                <li><a href="/san-pham/tablet-sony">Tablet Sony</a></li>
+                                                                <li><a href="/san-pham/tablet-coby">Tablet Coby</a></li>
+                                                                <li><a href="/san-pham/tablet-msi">Tablet MSI</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                        <ul class="colum1">
+                                                <li>
+                                                    <a href="/san-pham/phu-kien-tablet">Phụ kiện Tablet</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/tui-xach-cho-tablet">T&#250;i x&#225;ch cho Tablet</a></li>
+                                                                <li><a href="/san-pham/case--op-lung">Case, Ốp lưng</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/thoi-trang"><i class="fa /Uploads/shop90/images/icon/i_catelogy_4-20x20_png_pagespeed_ce_J1kY_BybUA.png"></i>Thời trang<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                                    <div class="sub-menu hidden-xs">
+                                        <ul class="colum0">
+                                                <li>
+                                                    <a href="/san-pham/thoi-trang-nam">Thời trang nam</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/giay-dep-nam">Giầy d&#233;p nam</a></li>
+                                                                <li><a href="/san-pham/tui---vi-nam">T&#250;i &amp; V&#237; nam</a></li>
+                                                                <li><a href="/san-pham/phu-kien-nam">Phụ kiện nam</a></li>
+                                                                <li><a href="/san-pham/quan-ao-nam">Quần &#225;o nam</a></li>
+                                                        </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="/san-pham/trang-suc----dong-ho">Trang sức  &amp; Đồng hồ</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/trang-suc-thoi-trang">Trang sức thời trang</a></li>
+                                                                <li><a href="/san-pham/trang-suc-cao-cap">Trang sức cao cấp</a></li>
+                                                                <li><a href="/san-pham/dong-ho-thoi-trang">Đồng hồ thời trang</a></li>
+                                                                <li><a href="/san-pham/dong-ho-cao-cap">Đồng hồ cao cấp</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                        <ul class="colum1">
+                                                <li>
+                                                    <a href="/san-pham/thoi-trang-nu">Thời trang nữ</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/phu-kien-nu">Phụ kiện nữ</a></li>
+                                                                <li><a href="/san-pham/tui---vi-nu">T&#250;i &amp; V&#237; nữ</a></li>
+                                                                <li><a href="/san-pham/quan-ao-nu">Quần &#225;o nữ</a></li>
+                                                                <li><a href="/san-pham/giay-dep-nu">Giầy d&#233;p nữ</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/hang-gia-dung"><i class="fa /Uploads/shop90/images/icon/i_catelogy_9-20x20_png_pagespeed_ce_G4vH-e1_d9.png"></i>H&#224;ng gia dụng<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                                    <div class="sub-menu hidden-xs">
+                                        <ul class="colum0">
+                                                <li>
+                                                    <a href="/san-pham/do-dung-gia-dinh">Đồ d&#249;ng gia đ&#236;nh</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/quat-may---quat-phun-suong">Quạt m&#225;y &amp; quat phun sương</a></li>
+                                                                <li><a href="/san-pham/ban-la">B&#224;n l&#224;</a></li>
+                                                                <li><a href="/san-pham/may-xay-toc">M&#225;y xấy t&#243;c</a></li>
+                                                                <li><a href="/san-pham/may-hut-bui">M&#225;y h&#250;t bụi</a></li>
+                                                                <li><a href="/san-pham/binh-tam-nuoc-nong">B&#236;nh tắm nước n&#243;ng</a></li>
+                                                                <li><a href="/san-pham/may-loc-nuoc">M&#225;y lọc nước</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                        <ul class="colum1">
+                                                <li>
+                                                    <a href="/san-pham/do-dung-nha-bep">Đồ d&#249;ng nh&#224; bếp</a>
+                                                        <ul class="subview-menu">
+                                                                <li><a href="/san-pham/noi-com-dien">Nồi cơm điện</a></li>
+                                                                <li><a href="/san-pham/noi-ap-suat">Nồi &#225;p suất</a></li>
+                                                                <li><a href="/san-pham/bep-ga">Bếp ga</a></li>
+                                                                <li><a href="/san-pham/bep-dien-tu">Bếp điện tử</a></li>
+                                                                <li><a href="/san-pham/bep-hong-ngoai">Bếp hồng ngoại</a></li>
+                                                                <li><a href="/san-pham/lo-vi-song">L&#242; vi s&#243;ng</a></li>
+                                                                <li><a href="/san-pham/lo-nuong">L&#242; nướng</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9 ">
+                        <nav class="navbar nav-menu">
+                            <div class="navbar-header">
+                                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <nav id="mobile-menu" class="mobile-menu collapse navbar-collapse">
+                                <ul class='menu nav navbar-nav'><li class="level0"><a class='' href='/trang-chu.html'><span>Trang chủ</span></a></li>
+									<li class="level0"><a class='' href='/gioi-thieu.html'><span>Giới thiệu</span></a></li>
+									<li class="level0"><a class='' href='/san-pham.html'><span>Sản phẩm</span></a></li>
+									<li class="level0"><a class='' href='/tin-tuc.html'><span>Tin tức</span></a></li>
+									<li class="level0"><a class='' href='/lien-he.html'><span>Liên hệ</span></a></li>
+								</ul class='menu nav navbar-nav'>
+                            </nav>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var str = location.href.toLowerCase();
+			$("ul.menu li a").each(function () {
+				if (str.indexOf(this.href.toLowerCase()) >= 0) {
+					$("ul.menu li").removeClass("active");
+					$(this).parent().addClass("active");
+				}
+			});
+		});
+	</script>
+
+<div class="slideshow">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<img src="images/slide/img.jpg" height="270px" width="100%">
+			</div>
+			<div class="col-md-3">
+				Tin tức
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<section class="product-content clearfix">
+					<h1 class="title clearfix"><span>Sản phẩm</span></h1>
+					<nav class="navbar navbar-default product-filter">
+						<ul class="display">
+							<li id="grid" class="active grid"><a href="#" title="Grid"><i class="fa fa-th-large"></i></a></li>
+							<li id="list" class="list"><a href="#" title="List"><i class="fa fa-th-list"></i></a></li>
+						</ul>
+						<div class="limit">
+							<span>Sản phẩm/trang</span>
+							<select id="lblimit" name="lblimit" class="nb_item" onchange="window.location.href = this.options[this.selectedIndex].value">
+										<option value="?limit=10">10</option>
+										<option value="?limit=12">12</option>
+										<option value="?limit=20">20</option>
+										<option value="?limit=50">50</option>
+										<option value="?limit=100">100</option>
+										<option value="?limit=250">250</option>
+										<option value="?limit=500">500</option>
+							</select>
+						</div>
+						<div class="sort">
+							<span>Sắp xếp</span>
+							<select class="selectProductSort" id="lbsort" onchange="window.location.href = this.options[this.selectedIndex].value">
+										<option value="?sort=index&amp;order=asc">Mặc định</option>
+										<option value="?sort=price&amp;order=asc">Gi&#225; tăng dần</option>
+										<option value="?sort=price&amp;order=desc">Gi&#225; giảm dần</option>
+										<option value="?sort=name&amp;order=asc">T&#234;n sản phẩm: A to Z</option>
+										<option value="?sort=name&amp;order=desc">T&#234;n sản phẩm: Z to A</option>
+							</select>
+						</div>
+					</nav>
+					
+					<div class="product-block product-grid clearfix">
+						
+						<div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+							<div class="product-item">
+								<div class="image image-resize">
+									<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">
+										<img src="images/product/asus-3505-372622-1-zoom.jpg" data-original="images/product/asus-3505-372622-1-zoom.jpg" alt="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)" class="img-responsive lazy-img" />
+									</a>
+									<span class="hot">Hot</span>
+								</div>
+								<div class="right-block">
+									<h2 class="name">
+										<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)</a>
+									</h2>
+									<div class="rating">
+										<div class="rating-1">
+											<span class="rating-img">
+											</span>
+										</div>
+									</div>
+									<div class="price">
+											<span class="price-new">15.490.000&nbsp;₫</span>
+									</div>
+									<div class="button">
+										<a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(638,1)">Mua</a>
+									</div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+							<div class="product-item">
+								<div class="image image-resize">
+									<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">
+										<img src="images/product/asus-3505-372622-1-zoom.jpg" data-original="images/product/asus-3505-372622-1-zoom.jpg" alt="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)" class="img-responsive lazy-img" />
+									</a>
+									<span class="hot">Hot</span>
+								</div>
+								<div class="right-block">
+									<h2 class="name">
+										<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)</a>
+									</h2>
+									<div class="rating">
+										<div class="rating-1">
+											<span class="rating-img">
+											</span>
+										</div>
+									</div>
+									<div class="price">
+											<span class="price-new">15.490.000&nbsp;₫</span>
+									</div>
+									<div class="button">
+										<a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(638,1)">Mua</a>
+									</div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+							<div class="product-item">
+								<div class="image image-resize">
+									<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">
+										<img src="images/product/asus-3505-372622-1-zoom.jpg" data-original="images/product/asus-3505-372622-1-zoom.jpg" alt="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)" class="img-responsive lazy-img" />
+									</a>
+									<span class="hot">Hot</span>
+								</div>
+								<div class="right-block">
+									<h2 class="name">
+										<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)</a>
+									</h2>
+									<div class="rating">
+										<div class="rating-1">
+											<span class="rating-img">
+											</span>
+										</div>
+									</div>
+									<div class="price">
+											<span class="price-new">15.490.000&nbsp;₫</span>
+									</div>
+									<div class="button">
+										<a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(638,1)">Mua</a>
+									</div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+							<div class="product-item">
+								<div class="image image-resize">
+									<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">
+										<img src="images/product/asus-3505-372622-1-zoom.jpg" data-original="images/product/asus-3505-372622-1-zoom.jpg" alt="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)" class="img-responsive lazy-img" />
+									</a>
+									<span class="hot">Hot</span>
+								</div>
+								<div class="right-block">
+									<h2 class="name">
+										<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)</a>
+									</h2>
+									<div class="rating">
+										<div class="rating-1">
+											<span class="rating-img">
+											</span>
+										</div>
+									</div>
+									<div class="price">
+											<span class="price-new">15.490.000&nbsp;₫</span>
+									</div>
+									<div class="button">
+										<a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(638,1)">Mua</a>
+									</div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+							<div class="product-item">
+								<div class="image image-resize">
+									<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">
+										<img src="images/product/asus-3505-372622-1-zoom.jpg" data-original="images/product/asus-3505-372622-1-zoom.jpg" alt="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)" class="img-responsive lazy-img" />
+									</a>
+									<span class="hot">Hot</span>
+								</div>
+								<div class="right-block">
+									<h2 class="name">
+										<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)</a>
+									</h2>
+									<div class="rating">
+										<div class="rating-1">
+											<span class="rating-img">
+											</span>
+										</div>
+									</div>
+									<div class="price">
+											<span class="price-new">15.490.000&nbsp;₫</span>
+									</div>
+									<div class="button">
+										<a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(638,1)">Mua</a>
+									</div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+							<div class="product-item">
+								<div class="image image-resize">
+									<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">
+										<img src="images/product/asus-3505-372622-1-zoom.jpg" data-original="images/product/asus-3505-372622-1-zoom.jpg" alt="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)" class="img-responsive lazy-img" />
+									</a>
+									<span class="hot">Hot</span>
+								</div>
+								<div class="right-block">
+									<h2 class="name">
+										<a href="/san-pham/asus-p550lnvxo221d---core-i7-4510u-2.0ghz~3.1ghz---15.6”---4gb-(xam).html" title="Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)">Asus P550LNVXO221D - Core i7-4510U 2.0GHz~3.1GHz / 15.6” / 4GB (X&#225;m)</a>
+									</h2>
+									<div class="rating">
+										<div class="rating-1">
+											<span class="rating-img">
+											</span>
+										</div>
+									</div>
+									<div class="price">
+											<span class="price-new">15.490.000&nbsp;₫</span>
+									</div>
+									<div class="button">
+										<a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(638,1)">Mua</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="navigation">
+						<ul class="pagination">
+							<li>
+								<a href="?page=1" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+									<li class="active"><a href="?page=1">1</a></li>
+									<li><a href="?page=2">2</a></li>
+							<li>
+								<a href="?page=2" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end main -->
+<div class="footer">
+
+    <div class="footer-content clearfix">
+        <div class="container">
+            <div class="row">
+                    <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                        <div class="item">
+                            <h3>
+                                <span>Về ch&#250;ng t&#244;i</span>
+                            </h3>
+                        </div>
+                            <ul>
+                                                <li>
+                                                    <a href="/gioi-thieu.html">
+                                                        Giới thiệu
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/content/giao-hang-doi-tra.html">
+                                                        Giao h&#224;ng - Đổi trả
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/content/chinh-sach-bao-mat.html">
+                                                        Ch&#237;nh s&#225;ch bảo mật
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/lien-he.html">
+                                                        Li&#234;n hệ
+                                                    </a>
+                                                </li>
+                            </ul>
+                    </div>
+                    <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                        <div class="item">
+                            <h3>
+                                <span>Trợ gi&#250;p</span>
+                            </h3>
+                        </div>
+                            <ul>
+                                                <li>
+                                                    <a href="/content/huong-dan-mua-hang.html">
+                                                        Hướng dẫn mua h&#224;ng
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/content/huong-dan-thanh-toan.html">
+                                                        Hướng dẫn thanh to&#225;n
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/content/tai-khoan-giao-dich.html">
+                                                        T&#224;i khoản giao dịch
+                                                    </a>
+                                                </li>
+                            </ul>
+                    </div>
+                <div class="footer-box box-address col-md-3 col-sm-12 col-xs-12">
+                    <div class="item">
+                        <h3>
+                            <span>Thông tin công ty</span>
+                        </h3>
+                        <div class="box-address-content">
+                            <b>C&#212;NG TY TNHH PH&#193;T TRIỂN C&#212;NG NGHỆ RUNTIME</b>
+                            <p><i class="fa fa-map-marker"></i> 5/12A Quang Trung, P.14, Q.G&#242; Vấp, Tp.HCM</p>
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:info@runtime.vn">info@company.vn</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-phone"></i>
+                                Phone: (08) 66 85 85 38
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-box box-social col-md-3 col-sm-12 col-xs-12">
+                    <div class="item">
+                        <h3>
+                            <span>Liên kết</span>
+                        </h3>
+                        <div class="fb-like-box" data-href="#" data-width="289"
+                             data-height="190" data-colorscheme="dark" data-show-faces="true" data-header="false"
+                             data-stream="false" data-show-border="false">
+                        </div>
+                        <div class="social-icon">
+                            <ul>
+                                <li><a ><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" ><i class="fa fa-facebook"></i></a></li>
+                                <li><a ><i class="fa fa-youtube"></i></a></li>
+                                <li><a ><i class="fa fa-twitter "></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-box box-letter col-md-3 col-sm-12 col-xs-12 hide">
+                    <div class="item">
+                        <h3>
+                            Đăng ký nhận tin
+                        </h3>
+                        <div class="letter-title">
+                            <span>Hộp thư</span><i class="icon-title"></i>
+                        </div>
+                        <div class="letter-content">
+                            <div class="new-paper">
+                                <div class="input-box">
+                                    <input type="text" name="email" id="txtNewsletter" class="input-text form-control" value="" placeholder="Your Emain Address" />
+                                </div>
+                                <div class="button text-center">
+                                    <a class="btn btn-primary">Nhận tin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

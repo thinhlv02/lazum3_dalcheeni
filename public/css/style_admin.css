@@ -1,0 +1,16 @@
+hr {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    border: 0 !important;
+    border-top: 1px solid !important;
+}
+
+/*css khi back lại trang đổ màu cho tr*/
+.thinhlv_selected {
+    background-color: navajowhite !important;
+}
+
+.schedule_week_selected {
+    background-color: wheat !important;
+}
+/*css khi back lại trang đổ màu cho tr*/
