@@ -23,8 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-//$config['base_url'] = 'http://dalcheeni.cf';
-$config['base_url'] = 'http://localhost/lazum3_dalcheeni/';
+$config['base_url'] = 'http://lazum3_dalcheeni.code/';
 /*
 |--------------------------------------------------------------------------
 | Index File
